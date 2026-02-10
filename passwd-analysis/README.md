@@ -45,6 +45,8 @@ Tools used:
 
 Example workflow:
 ```bash
+cut -d: -f1,3,7 /etc/passwd 
+cut -d: -f1,3,7 /etc/passwd | grep -Ev 'false|nologin' 
 cut -d: -f1,3,7 /etc/passwd | grep -Ev 'false|nologin' | sed 's/:/,/g'
 ```
 
