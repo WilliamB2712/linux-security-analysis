@@ -44,7 +44,9 @@ grep -E '^Password.*yes' sshd_config
 grep -E 'yes$' sshd_config
 ```
 
-Key Takeaways
+---
+
+## Key Takeaways
 Regex allows precise extraction of configuration intent
 
 Anchors (^, $) reduce false positives
@@ -53,7 +55,7 @@ Filtering commented lines is essential for accurate analysis
 
 Regex is foundational for log analysis and detection rules
 
-Blue Team Relevance
+## Blue Team Relevance
 SSH hardening verification
 
 Configuration drift detection
