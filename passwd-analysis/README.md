@@ -49,8 +49,9 @@ cut -d: -f1,3,7 /etc/passwd
 cut -d: -f1,3,7 /etc/passwd | grep -Ev 'false|nologin' 
 cut -d: -f1,3,7 /etc/passwd | grep -Ev 'false|nologin' | sed 's/:/,/g'
 ```
+---
 
-Key Takeaways
+## Key Takeaways
 
 /etc/passwd provides account metadata, not authentication data
 
@@ -60,7 +61,7 @@ Output formatting and normalization are required before counting
 
 Incorrect assumptions lead to misleading metrics
 
-Blue Team Relevance
+## Blue Team Relevance
 
 User enumeration during incident response
 
